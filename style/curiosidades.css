@@ -230,6 +230,13 @@ display: block;
     .logo {display: none;}
     .cont {font-size: 16px;}
     .cont {padding:30px 20px;}
+    .invis p{
+     max-width: 300px;
+     
+}
+.invis h1{
+     font-size: 25px;
+}
 }
 @media  (max-width:942px) {
     #txtdarkmode {top: 110px;}
