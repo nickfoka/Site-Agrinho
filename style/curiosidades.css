@@ -1,0 +1,237 @@
+/*Define as variaveis globais*/
+:root {
+    --cor-primaria: #ffffff;
+    --cor-secundaria: #248232;
+    --cor-texto: #000000;
+    --cor-banner: #ffffff;
+}
+@font-face {
+    font-family: playwrite;
+    src: url(/fonts/Playwrite_GB_J/PlaywriteGBJ-VariableFont_wght.ttf);
+}
+/*Define as cores do modo dark*/
+.mododark {
+    --cor-primaria: #272a31;
+    --cor-texto: #ffffff;
+}
+/*Remoção das margens do corpo do site*/
+body {
+margin: 0;
+background-color: var(--cor-primaria);
+}
+/*Estilo dos links de navegação*/
+.nav {
+    position:fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    box-shadow: 0px 0px 7px #000000;
+    padding: 25px 25px 25px 25px;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+.nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.nav li {
+    margin-left: 25px;
+    font-family: sans-serif;
+    font-weight: 750;
+    font-size: 20px;
+    transform: scale(1);
+    transition: all 0.1s;
+}
+.nav a {
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    transition: all 0.1s;
+}
+/*Transição de escala nos links do nav*/
+.nav li:hover {
+    transform: scale(1.1);
+}
+/*Transição de cor nos links do nav*/
+.nav a:hover {
+    color: #059862;
+}
+.nav .logo img{
+    position: absolute;
+    left: 30px;
+    top: 5px;
+    height: 70px;
+    width: auto;
+}
+#txtdarkmode {
+    position: fixed;
+    color: black;
+    font-family: sans-serif;
+    font-weight: 600;
+    top: 11px;
+    right: 100px;
+}
+.mododark #txtdarkmode {
+    color: white;
+}
+.botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: fixed;
+    background-color: var(--cor-texto);
+    border-radius: 50%;
+    transition: 0.1s;
+    top: 22px;
+    right: 50px;
+    width: 33px;
+    height: 33px;
+}
+.botao:hover {
+    scale: 125%;
+}
+.botao:active {
+    scale: 70%;
+    scale: 125%;
+    scale: 100%;
+}
+/*Estilo do Banner do site principal*/
+.banner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--cor-secundaria);
+    padding: 60px 20px;
+    margin-top: 77px;
+}
+.banner h1{
+    color: var(--cor-banner);
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 60px;
+    text-align: center;
+    max-width: 1000px;
+}
+/*Estilo do conteudo da página*/
+.cont {
+    color: var(--cor-texto);
+    display:block;
+    text-align: center;
+    padding: 40px 0;
+    font-size: 18px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.cont p {
+    text-align: justify;
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 0 0px;
+}
+#paragrafoinicial {
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+    text-shadow: 1px 1px 3px grey;
+}
+#h1inicial {
+    text-align: center;
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 3px grey;
+}
+.rodape {
+    background-color: #134611;
+    padding: 40px 0px 20px 0px;
+    font-family: sans-serif;
+    color: white;
+    box-shadow: 0px -1px 6px black;
+    margin-top: 50px;
+}
+.rodape-conteudo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.rodape-secao h3 {
+    color: rgb(40, 211, 77);
+}
+.rodape-secao p {
+    color: white;
+    font-weight: 600;
+}
+.rodape-secao img {
+display: block;
+    height: 120px;
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.rodape-creditos {
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.rodape-creditos p{
+    margin-bottom: 0px;
+}
+.invis {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    max-width: 900px;
+    transition: 0.3s;
+    margin: 0 auto 20px auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    border: 4px solid rgb(23, 82, 32);
+    background-color: rgba(36, 130, 50, 0.7);
+    font-family: playwrite;
+    font-weight: 600;
+    font-size: 18px;
+    color: transparent;
+}
+.invis p{
+     max-width: 800px;
+}
+.invis h1{
+     margin-top: 0;
+}
+.visiv {
+    background-color: rgb(36, 130, 50, 0.5);
+    color: var(--cor-texto);
+}
+/*Faz a remoção da logo do site a partir de uma resolução de 767px*/
+@media (max-width:767px) {
+    .logo {display: none;}
+    .cont {font-size: 16px;}
+    .cont {padding:30px 20px;}
+}
+@media  (max-width:942px) {
+    #txtdarkmode {top: 110px;}
+    .botao {top: 120px;}
+}

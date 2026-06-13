@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/style/curiosidades.css">
+        <title>Agrinho</title>
+    </head>
+    <body>
+        <script src="js/curiosidades.js" defer></script>
+        <header>
+        <div class="nav">
+            <div class="logo">  
+                <a target="_self" href="index.html">
+                    <img src="/imgs/LOGO-AGRINHO.png" alt="logo_agrinho">
+                </a>
+            </div>
+        <nav>
+            <ul>
+                <li><a target="_self" href="/index.html">Página Principal</a></li>
+                <li><a target="_self" href="/html/sobre.html">Sobre</a></li>    
+                <li><a target="_self" href="/html/quizz.html">Quizz</a></li>
+                <li><a target="_self" href="/html/curiosidades.html">Curiosidades</a></li>                
+            </ul>
+            <p id="txtdarkmode">Modo Dark</p>
+            <button onclick="darkmode()" type="button" class="botao">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M480-600q17 0 28.5-11.5T520-640q0-17-11.5-28.5T480-680q-17 0-28.5 11.5T440-640q0 17 11.5 28.5T480-600Zm-70.5 218.5Q378-403 364-438q-5 0-9 .5t-9 .5q-52 0-89-37t-37-89q0-21 7-40.5t21-36.5q-13-17-20-36.5t-7-40.5q0-52 36.5-89t88.5-37q5 0 9 .5t9 .5q14-35 45.5-56.5T480-920q39 0 70.5 21.5T596-842q5 0 9-.5t9-.5q52 0 88.5 37t36.5 89q0 21-6.5 40.5T712-640q13 17 20 36.5t7 40.5q0 52-36.5 89T614-437q-5 0-9-.5t-9-.5q-14 35-45.5 56.5T480-360q-39 0-70.5-21.5ZM480-80q0-74 28.5-139.5T586-334q49-49 114.5-77.5T840-440q0 74-28.5 139.5T734-186q-49 49-114.5 77.5T480-80Zm98-98q57-21 100-64t64-100q-57 21-100 64t-64 100Zm-98 98q0-74-28.5-139.5T374-334q-49-49-114.5-77.5T120-440q0 74 28.5 139.5T226-186q49 49 114.5 77.5T480-80Zm-98-98q-57-21-100-64t-64-100q57 21 100 64t64 100Zm196 0Zm-196 0Zm232-339q19 0 32.5-13.5T660-563q0-14-7.5-24.5T633-604l-35-17q-2 11-6 21.5t-9 19.5q-5 9-12 17t-15 15l32 23q5 4 11.5 6t14.5 2Zm-16-142 35-17q12-6 19-17t7-24q0-19-13-32.5T614-763q-8 0-14 2t-12 6l-33 23q8 7 15.5 15t12.5 17q5 9 9 19.5t6 21.5Zm-159-93q10-4 20-6t21-2q11 0 21 2t20 6l5-44q2-18-12.5-31T480-840q-19 0-33.5 13T434-796l5 44Zm41 312q19 0 33.5-13t12.5-31l-5-44q-10 4-20 6t-21 2q-11 0-21-2t-20-6l-5 44q-2 18 12.5 31t33.5 13ZM362-659q2-11 6-21.5t9-19.5q5-9 12-17t15-15l-32-23q-5-4-11.5-6t-14.5-2q-19 0-32.5 13.5T300-717q0 13 7.5 24t19.5 17l35 17Zm-16 141q8 0 14-1.5t12-6.5l33-22q-8-7-15.5-15T377-580q-5-9-9-19.5t-6-21.5l-35 17q-12 6-19 17t-7 24q1 19 13.5 32t31.5 13Zm237-62Zm0-120Zm-103-60Zm0 240ZM377-700Zm0 120Z"/></svg>
+        </nav>
+        </div>
+        <div class="banner">
+        <h1>Curiosidades</h1>
+        </div>
+        </header>
+        <main>
+    <div>
+        <div class="cont">
+                <p id="paragrafoinicial">Será mostrado um conjunto de curiosidades sobre o agro.</p>
+                <h1 id="h1inicial">Clique nas caixas para mostrar as curiosidades!</h1>
+            <div class="invis" onclick="this.classList.toggle('visiv')">
+            <h1>O Brasil alimenta mais de 1 bilhão de pessoas</h1>
+            <p>A produção agrícola brasileira é tão grande que os alimentos produzidos no país ajudam a abastecer mercados em diversos continentes.</p>
+            </div>
+                        <div class="invis" onclick="this.classList.toggle('visiv')">
+            <h1>Mais de 60% do território brasileiro mantém vegetação nativa</h1>
+            <p>Mesmo sendo uma potência agrícola, grande parte do território nacional permanece coberta por florestas, cerrados e outras vegetações naturais.</p>
+            </div>
+                        <div class="invis" onclick="this.classList.toggle('visiv')">
+            <h1>O agro brasileiro utiliza satélites no campo</h1>
+            <p>Produtores rurais usam imagens de satélite para monitorar plantações, identificar problemas e economizar recursos como água e fertilizantes.</p>
+            </div>
+                        <div class="invis" onclick="this.classList.toggle('visiv')">
+            <h1>A agricultura de precisão reduz desperdícios</h1>
+            <p>Máquinas modernas aplicam insumos apenas onde são necessários, aumentando a produtividade e diminuindo impactos ambientais.</p>
+            </div>
+                        <div class="invis" onclick="this.classList.toggle('visiv')">
+            <h1>O Brasil é líder mundial na produção de soja</h1>
+            <p>A soja é uma das principais culturas do país e tem grande importância para a alimentação humana e animal.</p>
+            </div>
+                        <div class="invis" onclick="this.classList.toggle('visiv')">
+            <h1>Integração Lavoura-Pecuária-Floresta ajuda a preservar o solo</h1>
+            <p>Esse sistema combina agricultura, criação de animais e árvores na mesma área, tornando o uso da terra mais sustentável.</p>
+            </div>
+                        <div class="invis" onclick="this.classList.toggle('visiv')">
+            <h1>Muitas fazendas produzem sua própria energia</h1>
+            <p>Painéis solares e biodigestores estão cada vez mais presentes no campo, gerando energia limpa para as propriedades rurais.</p>
+            </div>
+                        <div class="invis" onclick="this.classList.toggle('visiv')">
+            <h1>O agro gera milhões de empregos</h1>
+            <p>Do plantio à exportação, o setor agropecuário movimenta uma enorme cadeia produtiva que emprega milhões de brasileiros.</p>
+            </div>
+                        <div class="invis" onclick="this.classList.toggle('visiv')">
+            <h1>O Brasil possui uma das maiores reservas de água doce do planeta</h1>
+            <p>Esse recurso é fundamental para a produção agrícola e exige manejo responsável para garantir sua disponibilidade no futuro.</p>
+            </div>
+                        <div class="invis" onclick="this.classList.toggle('visiv')">
+            <h1>Drones já fazem parte da rotina no campo</h1>
+            <p>Eles ajudam a monitorar lavouras, detectar pragas e acompanhar o desenvolvimento das culturas com rapidez.</p>
+            </div>
+                        <div class="invis" onclick="this.classList.toggle('visiv')">
+            <h1>O plantio direto ajuda a combater a erosão</h1>
+            <p>Nessa técnica, o solo permanece coberto por restos vegetais, protegendo-o da chuva e conservando sua fertilidade.</p>
+            </div>
+                        <div class="invis" onclick="this.classList.toggle('visiv')">
+            <h1>O etanol brasileiro é referência mundial</h1>
+            <p>Produzido principalmente a partir da cana-de-açúcar, o etanol é um combustível renovável que ajuda a reduzir emissões de gases do efeito estufa.</p>
+            </div>
+    </div>
+            
+        </div>
+            </main>
+    <footer class="rodape">
+        <div class="rodape-conteudo">
+            <div class="rodape-secao">
+                <img src="/imgs/LOGO-AGRINHO.png">
+            </div>
+            <div class="rodape-secao">
+                <h3>Contato:</h3>
+                <p>Email: nicollastimoteosantos@gmail.com</p>
+                <p>Telefone: 12312455125215</p>
+            </div>
+            <div class="rodape-secao">
+                <h3>Projeto Agrinho</h3>
+                <p>Projeto de website feito para a competição agrinho<br>
+                   Nenhum tipo de IA generativa foi usada para<br> fazer o código do website</p>
+            </div>
+        </div>
+        <div class="rodape-creditos">
+            <p>2026 Agro Forte, Futuro Sustentável. Todos os direitos reservados.</p>
+        </div>
+        
+    </footer>
+</body>
+</html>
