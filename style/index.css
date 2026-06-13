@@ -17,6 +17,7 @@ body {
     margin: 0;
     background-color: #134611;
 }
+/*Estilo do fundo da página*/
 .fundo {
     display: flex;
     flex-direction: row;
@@ -38,6 +39,7 @@ body {
     z-index: -1;
     height: auto;
 }
+/*Estilo do texto grande na tela principal*/
 #conteudoprincipal {
     position: absolute;
     top: 50%;
@@ -52,6 +54,7 @@ body {
     text-shadow: 3px 3px 10px black;
     white-space: nowrap;
 }
+/*Estilo dos botões na tela principal*/
 .botoes {
     position: absolute;
     top: 70%;
@@ -124,6 +127,7 @@ body {
     height: 70px;
     width: auto;
 }
+/*Estilo do botão de darkmode*/
 #txtdarkmode {
     position: fixed;
     color: black;
@@ -195,6 +199,7 @@ body {
     max-width: 900px;
     padding: 0 0px;
 }
+/*Estilo do rodapé*/
 .rodape {
     margin-top: 0;
     background-color: #134611;
@@ -237,7 +242,7 @@ display: block;
     margin-bottom: 0px;
 }
 
-/*Faz a remoção da logo do site a partir de uma resolução de 767px*/
+/*Faz alguns ajustes de acordo com o tamanho da tela*/
 @media (max-width:767px) {
     .logo {display: none;}
 

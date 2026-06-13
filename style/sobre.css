@@ -67,6 +67,7 @@ background-color: var(--cor-primaria);
     height: 70px;
     width: auto;
 }
+/*Estilo do botão e do parágrafo "Modo Dark"*/
 #txtdarkmode {
     position: fixed;
     color: black;
@@ -141,6 +142,7 @@ background-color: var(--cor-primaria);
     max-width: 900px;
     padding: 10px;
 }
+/*Estilo do rodapé*/
 .rodape {
     background-color: #134611;
     padding: 40px 0px 20px 0px;
@@ -183,7 +185,7 @@ display: block;
     margin-bottom: 0px;
 }
 
-/*Faz a remoção da logo do site a partir de uma resolução de 767px*/
+/*Faz os ajustes na página de acordo com a resolução horizontal da página*/
 @media (max-width:767px) {
     .logo {display: none;}
     .cont {font-size: 16px;}

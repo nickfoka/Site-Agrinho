@@ -5,6 +5,7 @@
     --cor-texto: #000000;
     --cor-banner: #ffffff;
 }
+/*importação de uma fonte*/
 @font-face {
     font-family: playwrite;
     src: url(../fonts/Playwrite_GB_J/PlaywriteGBJ-VariableFont_wght.ttf);
@@ -71,6 +72,7 @@ background-color: var(--cor-primaria);
     height: 70px;
     width: auto;
 }
+/*Estilo do botão darkmode*/
 #txtdarkmode {
     position: fixed;
     color: black;
@@ -97,6 +99,7 @@ background-color: var(--cor-primaria);
     width: 33px;
     height: 33px;
 }
+/*Transição do botão darkmode*/
 .botao:hover {
     scale: 125%;
 }
@@ -153,6 +156,7 @@ background-color: var(--cor-primaria);
     margin-bottom: 40px;
     text-shadow: 1px 1px 3px grey;
 }
+/*Estilo do rodapé*/
 .rodape {
     background-color: #134611;
     padding: 40px 0px 20px 0px;
@@ -194,6 +198,7 @@ display: block;
 .rodape-creditos p{
     margin-bottom: 0px;
 }
+/*Estilo do texto das caixas de curiosidades*/
 .invis {
     display: flex;
     flex-direction: row;
@@ -221,11 +226,12 @@ display: block;
 .invis h1{
      margin-top: 0;
 }
+/*Classe que tira a caixa de cima do texto*/
 .visiv {
     background-color: rgb(36, 130, 50, 0.5);
     color: var(--cor-texto);
 }
-/*Faz a remoção da logo do site a partir de uma resolução de 767px*/
+/*Faz os ajustes na página de acordo com o tamanho horizontal da resolução*/
 @media (max-width:767px) {
     .logo {display: none;}
     .cont {font-size: 16px;}
