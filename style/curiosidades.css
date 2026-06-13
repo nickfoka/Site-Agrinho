@@ -7,7 +7,7 @@
 }
 @font-face {
     font-family: playwrite;
-    src: url(/fonts/Playwrite_GB_J/PlaywriteGBJ-VariableFont_wght.ttf);
+    src: url(../fonts/Playwrite_GB_J/PlaywriteGBJ-VariableFont_wght.ttf);
 }
 /*Define as cores do modo dark*/
 .mododark {

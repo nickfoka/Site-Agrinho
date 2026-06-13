@@ -1,0 +1,228 @@
+:root {
+    --cor-primaria: #ffffff;
+    --cor-secundaria: #248232;
+    --cor-texto: #000000;
+    --cor-banner: #ffffff;
+}
+/*Define as cores do modo dark*/
+.mododark {
+    --cor-primaria: #272a31;
+    --cor-texto: #ffffff;
+}
+/*Remoção das margens do corpo do site*/
+body {
+    min-height: 100vh;
+    margin: 0;
+    background-image: url("../imgs/imagem_agro.png");
+    background-size: cover;
+    background-color: var(--cor-primaria);
+}
+.botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: fixed;
+    background-color: var(--cor-texto);
+    border-radius: 50%;
+    transition: 0.1s;
+    top: 22px;
+    right: 50px;
+    width: 33px;
+    height: 33px;
+}
+.botao:hover {
+    scale: 125%;
+}
+.botao:active {
+    scale: 70%;
+    scale: 125%;
+    scale: 100%;
+}
+/*Estilo dos links de navegação*/
+.nav {
+    position:fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    box-shadow: 0px 0px 7px #000000;
+    padding: 25px 25px 25px 25px;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+.nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.nav li {
+    margin-left: 25px;
+    font-family: sans-serif;
+    font-weight: 750;
+    font-size: 20px;
+    transform: scale(1);
+    transition: all 0.1s;
+}
+.nav a {
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    transition: all 0.1s;
+}
+/*Transição de escala nos links do nav*/
+.nav li:hover {
+    transform: scale(1.1);
+}
+/*Transição de cor nos links do nav*/
+.nav a:hover {
+    color: #059862;
+}
+.nav .logo img{
+    position: absolute;
+    left: 30px;
+    top: 5px;
+    height: 70px;
+    width: auto;
+}
+#txtdarkmode {
+    position: fixed;
+    color: black;
+    font-family: sans-serif;
+    transition: 0.1s;
+    font-weight: 600;
+    top: 11px;
+    right: 100px;
+}
+.mododark #txtdarkmode {
+    color: white;
+}
+.contentquizz {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    scale: 1;
+    transition: scale 0.3;
+    width: 100vw;
+    height: 100vh;
+}
+.subcont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    background-color: rgba(44, 175, 64, 0.8);
+    border: 5px solid rgb(26, 88, 35);
+    border-radius: 50px;
+    width: 50vw;
+    padding-bottom: 15px;
+}
+.pergunta p{
+    color: var(--cor-texto);
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 15px;
+    max-width: 900px;
+}
+.botoesresposta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 800px;
+}
+.botoesresposta .botaoresposta{
+    font-size: 10px;
+    color: var(--cor-texto);
+    background-color: var(--cor-secundaria);
+    border: 2px solid rgb(41, 102, 41);
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 30px;
+}
+.botoesresposta .botaoresposta2{
+    color: var(--cor-texto);
+    font-weight: 500;
+    font-size: 30px;
+    background-color: var(--cor-secundaria);
+    border: 2px solid rgb(41, 102, 41);
+    border-radius: 20px;
+}
+.botoesresposta .botaoresposta:hover{
+    background-color: #42a751;
+}
+.botoesresposta .botaoresposta2:hover{
+    background-color: #42a751;
+}
+.resposta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    scale: 0;
+    color: transparent;
+    -webkit-text-stroke: 0px;
+    transition: scale 1s;
+    z-index: 3;
+}
+.resposta p{
+    margin: 0;
+    display: block;
+    font-family: sans-serif;
+    font-size: 80px;
+    font-weight: 600;
+}
+.resultado{
+    display: none;
+}
+.resultado p{
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--cor-texto);
+    -webkit-text-stroke:2px white;
+}
+.certo{
+    scale: 1;
+    color: green;
+    -webkit-text-stroke: 2px black;
+}
+.errado{
+    scale: 1;
+    color: red;
+    -webkit-text-stroke: 2px black;
+}
+.sumir {
+    display: none;
+}
+.aparecer{
+    display: block;
+}
+@media (max-width:1200px){
+    .pergunta p{font-size: 20px; max-width: 500px;}
+    .botoesresposta .botaoresposta {font-size: 20px;}
+    .botoesresposta .botaoresposta2 {font-size: 20px;}
+}
+@media  (max-width:942px) {
+    #txtdarkmode {top: 110px;}
+    .botao {top: 120px;}
+}
+@media (max-width:770px){
+    .logo {display: none;}
+    .pergunta p{font-size: 20px; max-width: 230px;}
+    .botoesresposta .botaoresposta {font-size: 20px;}
+    .botoesresposta .botaoresposta2 {font-size: 20px;}
+}
